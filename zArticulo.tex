@@ -1,0 +1,233 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{float} %posicionar figuras
+\usepackage{multicol}
+\usepackage{multirow} % esto hará falta para figuras casi seguro
+\usepackage{amsmath} %ecuaciones bien
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\spanishdecimal{.}
+\usepackage{physics}
+\usepackage{graphicx} %opciones /includegraphics[...]
+
+\usepackage{soul} %tachado, usando \textst{lo que se desea tachar} No vale en ecuaciones.
+\usepackage[makeroom]{cancel} % tachar en equaciones \cancel{a tachar}; \bcancel tacha al revés ; \xcancel tacha con x; \cancelto {0 (o \infty}{expresion a tachar} flecha con 0 o infty
+
+
+\usepackage{indentfirst} % sangria de primera linea
+\setlength{\parindent}{0 mm} %elimina sangrado primera línea - recuperarla--> 5 mmm
+\setlength{\parskip}{5mm} %Espacio entre párrafos
+\usepackage[top=2.5cm, bottom=2.2cm, left=2.7cm, right=2.5cm]{geometry} % márgenes (para encuadernado-book: impares más a la izquda, pares más a la dcha.
+
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{esint} % integrales mejor
+\usepackage{enumerate}
+\usepackage{comment} % comentarios
+\usepackage{accents}
+\usepackage{pdfpages} %insertar pdfs
+\usepackage{ragged2e} % para  \justifying después de fcolorbox-parbox
+\usepackage{mathtools} 
+\usepackage{eurosym} % para el euro
+\usepackage{changepage} % sangrados párrafo
+
+%FLOAT EQNS LEFT
+\usepackage{nccmath} 
+\makeatletter
+\newcommand{\leqnomode}{\tagsleft@true}
+\newcommand{\reqnomode}{\tagsleft@false}
+\makeatother
+
+%nuevos colores - ahora tengo los "svgnames Colors"
+\definecolor{roig}{RGB}{196,49,24}
+\definecolor{morat}{RGB}{131,54,147}
+\definecolor{verd}{RGB}{85,107,47}
+\definecolor{gris}{RGB}{100,100,100}
+\definecolor{blau}{RGB}{0,0,100}
+\definecolor{fondoblau}{RGB}{232,255,255}
+\definecolor{fondoroig}{RGB}{245,194,194}
+\definecolor{fondoverd}{RGB}{209,240,192}
+
+\newcommand{\subrayado}[1]{\colorbox{LightYellow!50}{$\displaystyle #1$}} %fosforito ecuaciones begin{eq...    \subrayado{.......}
+
+
+\title{Demostración de la identidad de Jacobi \\ para los corchetes de Poisson}
+\author{Ignacio Vallés}
+
+
+
+\begin{document}
+\maketitle
+
+$\{A,B\} \ = \  \pdv{A}{q} \pdv{B}{p} \ - \   \pdv{A}{p} \pdv{B}{q}
+\quad \to \quad
+\{A,\{B.C\}\} \ + \ \{C,\{A,B\}\} \ + \  \{B,\{C,A\}\} \ = \ 0$
+
+
+
+\vspace{5mm}
+
+$\displaystyle \{A,\{B.C\}\}=\pdv{A}{q} \pdv{p} \{B,C\} - \pdv{A}{p}\pdv{q} \{B,C\} = $
+
+$\displaystyle =
+\pdv{A}{q} \pdv{p} \left(\pdv{B}{q} \pdv{C}{p} \ - \   \pdv{B}{p} \pdv{C}{q} \right) - \pdv{A}{p}\pdv{q} \left(\pdv{B}{q} \pdv{C}{p} \ - \   \pdv{B}{p} \pdv{C}{q} \right)=$
+
+\vspace{5mm} 
+
+$=\displaystyle \pdv{A}{q}
+\left( \pdv{B}{q}{p} \pdv{C}{p} + \pdv{B}{q} \pdv[2]{C}{p} -\pdv[2]{B}{p}\pdv{C}{q} - \pdv{B}{p} \pdv{C}{q}{p} \right)
+-\pdv{A}{p}
+\left( \pdv[2]{B}{q}\pdv{C}{q} + \pdv{B}{q}\pdv[2]{B}{q} - \pdv{B}{q}{p} \pdv{C}{q} - \pdv{B}{p}\pdv[2]{C}{q} \right) =$
+
+\vspace{5mm} 
+$=\displaystyle 
+\ \ \ + \pdv{A}{q} \pdv{B}{q}{p} \pdv{C}{p} +\pdv{A}{q} \pdv{B}{q} \pdv[2]{C}{p} -\pdv{A}{q}\pdv[2]{B}{p}\pdv{C}{q} -\pdv{A}{q} \pdv{B}{p} \pdv{C}{q}{p} \ (\to) $
+
+$\displaystyle (\to) -\pdv{A}{p} \pdv[2]{B}{q}\pdv{C}{p} -\pdv{A}{p} \pdv{B}{q}\pdv{C}{q}{p} +\pdv{A}{p} \pdv{B}{q}{p} \pdv{C}{q} +\pdv{A}{p}\pdv{B}{p}\pdv[2]{C}{q}  =$
+
+\vspace{5mm} 
+
+$\displaystyle =\ \ \  
+\cancel{\textcolor{red}{+\pdv{A}{q} \pdv{B}{q} \pdv[2]{C}{p}} } \ +\pdv{A}{p}\pdv{B}{p}\pdv[2]{C}{q} \ \ -\pdv{A}{q}\pdv[2]{B}{p}\pdv{C}{q}  \ \ \cancel{\textcolor{teal}{ -\pdv{A}{p} \pdv[2]{B}{q}\pdv{C}{p} }}
+\ \ (\to)
+$
+
+$\displaystyle (\to) \ 
++ \pdv{A}{q} \pdv{B}{q}{p} \pdv{C}{p} +\pdv{A}{p} \pdv{B}{q}{p} \pdv{C}{q}  -\pdv{A}{q} \pdv{B}{p} \pdv{C}{q}{p}  \cancel{\textcolor{blue}{-\pdv{A}{p} \pdv{B}{q}\pdv{C}{q}{p} } } =$
+
+\vspace{5mm} 
+Analicemos el resultado obtenido y comparemos con los que se obtendrán al permutar cíclicamente los operadores $A,\  B \text{ y } C$
+
+\vspace{5mm} 
+$\displaystyle \{C,\{A,B\}\} \ =  \qquad \textcolor{gris}{[A\to C;\ B\to A;\ C\to B]}$ 
+
+$\displaystyle =\ \ \  
++\pdv{C}{q} \pdv{A}{q} \pdv[2]{B}{p}  \ \cancel{\textcolor{teal}{+\pdv{C}{p}\pdv{A}{p}\pdv[2]{B}{q} }} \ \ -\pdv{C}{q}\pdv[2]{A}{p}\pdv{B}{q}  \ \ -\pdv{C}{p} \pdv[2]{A}{q}\pdv{B}{p} 
+\ \ (\to)
+$
+
+$\displaystyle (\to) \ 
++ \pdv{C}{q} \pdv{A}{q}{p} \pdv{B}{p} +\pdv{C}{p} \pdv{A}{q}{p} \pdv{B}{q}  -\pdv{C}{q} \pdv{A}{p} \pdv{B}{q}{p}  -\pdv{C}{p} \pdv{A}{q}\pdv{B}{q}{p}   =$
+
+
+
+\vspace{5mm} 
+$\displaystyle \{B,\{C,A\}\} \ = \qquad \textcolor{gris}{[A\to B;\ B\to C;\ C\to A]}$
+
+$\displaystyle =\ \ \  
++\pdv{B}{q} \pdv{C}{q} \pdv[2]{A}{p}  \ +\pdv{B}{p}\pdv{C}{p}\pdv[2]{A}{q} \ \ \cancel{\textcolor{red}{-\pdv{B}{q}\pdv[2]{C}{p}\pdv{A}{q} }} \ \ -\pdv{B}{p} \pdv[2]{C}{q}\pdv{A}{p} 
+\ \ (\to)
+$
+
+$\displaystyle (\to) \ 
+ \cancel{\textcolor{blue}{+ \pdv{B}{q} \pdv{C}{q}{p} \pdv{A}{p}}} +\pdv{B}{p} \pdv{C}{q}{p} \pdv{A}{q}  -\pdv{B}{q} \pdv{C}{p} \pdv{A}{q}{p}  -\pdv{B}{p} \pdv{C}{q}\pdv{A}{q}{p}   =$
+ 
+\vspace{5mm}
+Sumando las tres expresiones, por cada término que aparece en las dos primeras, aparece su opuesto en las 4 segundas y todos se cancelan, como puede comprobar el lector.
+
+A modo de ejemplo buscamos tres de ellos, $\ \displaystyle \textcolor{red}{+\pdv{A}{q} \pdv{B}{q} \pdv[2]{C}{p}} \ $ , $\ \displaystyle \textcolor{blue}{-\pdv{A}{p} \pdv{B}{q}\pdv{C}{q}{p} } $ $\text{ y } \textcolor{teal}{\displaystyle -\pdv{A}{p} \pdv[2]{B}{q}\pdv{C}{p}}$
+
+\vspace{5mm} Finalmente, $\ \{A,\{B.C\}\} \ + \ \{C,\{A,B\}\} \ + \  \{B,\{C,A\}\} \ = \ 0 $ \hspace{7cm} $\Box$
+
+\vspace{1cm}
+\rule{250pt}{0.1pt}
+\vspace{2cm}
+
+\textbf{Notación SIMPLÉCTICA} : 
+
+En 1-dim: $\quad z=\mqty(q\\p)\, , \quad $ en n-dim: $\quad z=\mqty(q_1&q_2&\cdots&q_n&\ p_1& p_2& \cdots &p_n)^T\, , \ $ con una transformación canónica, $\quad \mathbb Z=\mqty(Q_1&Q_2&\cdots&Q_n&\ P_1& P_2& \cdots &P_n)^T\, . $
+
+En 1-dim: $\quad \dot z=\mqty(\dot q \\ \dot q) = \mqty( \displaystyle \pdv{H}{p} \\ \displaystyle -\pdv{H}{q} )= J \mqty( \displaystyle \pdv{H}{q} \\ \displaystyle \pdv{H}{p} )=J \displaystyle \pdv{H}{z} \qquad\text{ con } \qquad J=\mqty(0&1\\-1&0)$
+
+En n-dim: $\quad J=\mqty(0&\textcolor{red}{I_{n\times n}} \\ \textcolor{blue}{-I_{n\times n}} &0)\qquad \qquad$
+Para 2-dim, $\quad J=\mqty(0&0& \textcolor{red}{1} & \textcolor{red}{0}\\
+0&0&\textcolor{red}{0}&\textcolor{red}{1} \\
+\textcolor{blue}{-1} & \textcolor{blue}{0}&0&0 \\
+\textcolor{blue}{0}&\textcolor{blue}{-1}&0&0 ) $
+
+
+
+
+Corchete de Poisson en notación simpléctica, para 1-dim
+
+
+
+$\{A,B\} =  \mqty( \displaystyle \pdv{A}{q}&\displaystyle \pdv{A}{p}) \ \mqty ( \displaystyle \pdv{B}{p}\\\displaystyle -\pdv{B}{q}) = \mqty(\displaystyle \pdv{A}{q}&\displaystyle \pdv{A}{p}) \ \mqty(0&1\\-1&0) \ \mqty(\displaystyle \pdv{B}{q} \\ \displaystyle \pdv{B}{p}) =\mqty( \displaystyle \pdv{A}{q}&\displaystyle \pdv{A}{p}) \ J \ \mqty(\displaystyle \pdv{B}{q} \\ \displaystyle \pdv{B}{p})$
+
+
+$$\boldsymbol{
+\{A,B\} \ = \displaystyle \  \left( \pdv{A}{z} \right)^T \ J \ \left( \pdv{B}{z} \right)
+}$$
+
+\begin{flushright}\rule{200pt}{0.1pt}\end{flushright}
+
+
+\vspace{5mm}
+
+$\textbf{Identidad de Jacobi} \qquad \{A,\{B.C\}\} \ + \ \{C,\{A,B\}\} \ + \  \{B,\{C,A\}\} \ = \ 0$
+
+$\text{Corchete de Poisson} \qquad \{A,B\} \ = \ \partial A^T \ J \ \partial B$
+ 
+\vspace{5mm}
+
+Para mayor comodidad en la demostración, escribiremos el corchete de Poisson en la forma: 
+
+$\ (\partial A)^T J (\partial B) \ \textcolor{gris}{\ \ \ = \ \displaystyle \left( \pdv{A}{z}\right)^T J \left(\pdv{B}{z}\right)}$ 
+
+$\{A,\{B,C\}\}\ = \{A,\partial B^T J \partial C\}= \partial A^T J \partial ( \partial B^T J \partial C) = \ (\partial J = 0) \ =
+\partial A^T J [ \partial \partial B^T J \partial C + \partial B^T J \partial \partial C ] = \partial A^T J \partial \partial B^T J \partial C + \partial A^T J  \partial B^T J \partial \partial C =
+\{A,\partial B^T\} J \partial C + \partial A^T J \{B, \partial C\}$
+
+Análogamente, alternando cíclicamente los valores de $A,\ B \text{ y } C$, tenemos:
+
+$\{C,\{A,B\}\}=\{C,\partial A^T\}J \partial B + \partial C^T J \{A, \partial B\} \qquad \text{ y } \qquad \{B\{C,A\}\}\ = \{B,\partial C^T\}J \partial A + \partial B^T J\{C,\partial A\}=$
+
+Sumando estas tres expresiones,
+
+$= \{A,\{B.C\}\} \ + \ \{C,\{A,B\}\} \ + \  \{B,\{C,A\}\} \ = 
+\{A,\partial B^T\} J \partial C + \partial A^T J \{B, \partial C\} \ + \    \{C,\partial A^T\}J \partial B + \partial C^T J \{A, \partial B\} \ + \{B,\partial C^T\}J \partial A + \partial B^T J \{C,\partial A\} = $
+
+Reorganizando,
+
+$=\{A, \partial B^T\}J \partial C + \partial  C^T J \{A,\partial  B\} \ + \ 
+\{B, \partial  C^T\}J \partial A \ + \ \partial  A^T J \{B, \partial  C\} \ + \ 
+\{C, \partial  A^T\} J \partial  B \ + \ \partial B^T J \{C, \partial  A\}
+\begin{matrix} _\divideontimes \\ =  \\ \, \end{matrix}$
+
+Como $\partial C^T J \{A, \partial  C\}$ es un número real, coincide con su traspuesto:
+
+
+$\partial C^T J \{A, \partial  C\}=[\partial C^T J \{A, \partial  C\}]^T=
+\{A, \partial B\}^T J^T (\partial C^T)^T = (\to) $
+
+Como $ \{A, \partial B\}^T=\{A, \partial B\}  \text{ por ser un número} ; \ \  (\partial C^T)^T=\partial C;\ \ J^T=-J $, tendremos
+
+$(\to )= \{A,\partial B\} (-J) \partial C =- \{A,\partial B\} J \partial C$ y análogamente para los términos pares de la expresión $\divideontimes$ con lo que podremos escribir,
+
+$\begin{matrix} _\divideontimes \\ =  \\ \, \end{matrix}
+\{A, \partial B^T\}J \partial C - \ \{A,\partial B\}J \partial C \ 
++ \ 
+\{B, \partial  C^T\}J \partial A \ -\  \{B,\partial C\} J \partial A \ 
++ \ 
+\{C, \partial  A^T\} J \partial  B \ + \ \{C,\partial A\} J \partial B
+= 
+[\{A,\partial B^T\}-\{A,\partial B\}]J\partial C+
+[\{B,\partial C^T\}-\{B,\partial C\}]J\partial A+
+[\{C,\partial A^T\}-\{C,\partial A\}]J\partial B
+\begin{matrix} _\divideontimes \\ =  \\ ^\divideontimes \end{matrix}$
+
+Como $B$ es un escalar, $B=B^T \ \to \ \partial B=\partial B^T \quad \text{y} \quad {\{A,\partial B\}-\{A,\partial B^T\}}=0$ y análogamente para los otros dos cocientes, entonces,
+
+$\begin{matrix} _\divideontimes \\ =  \\ ^\divideontimes \end{matrix}
+\ 0\ J\partial C \ + \  0\ J\partial B \ + \  0\ J\partial B\ =\ 0$  \hspace{9.5cm} $\Box$
+
+
+	
+\end{document}

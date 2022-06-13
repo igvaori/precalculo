@@ -1,0 +1,1192 @@
+\chapter{Lugares geométricos}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (6.5,.2);
+	\fill [left color=teal!50, right color=blue!50] (6.5,0) rectangle (11.5,.2);
+	\end{tikzpicture}
+\vspace{1cm}
+
+\begin{adjustwidth}{40pt}{40pt}
+\begin{cuadro-gris}
+
+	\begin{multicols}{2}
+	$\triangleright \quad$  Lugar geométrico.
+	
+		$\triangleright \quad$  Bisectriz.
+	
+	$\triangleright \quad$  Mediatriz.
+	
+	$\triangleright \quad$  Circunferencia.
+	
+	\end{multicols}
+	
+\end{cuadro-gris}
+\end{adjustwidth}
+
+\vspace{1cm}
+\section{Lugares geométricos}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.1);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.1);
+	\end{tikzpicture}
+\vspace{1cm}
+
+	\begin{definition}[ Lugares geométricos]
+	
+	Conjunto de los puntos $X(x,y)$ del plano, $\mathbb R^2$	, que cumplen una determinada condición.
+	\end{definition}
+
+\vspace{5mm}
+\underline{Observaciones}: $\quad$ Rectas y segmentos también son lugares geométricos.
+
+\begin{itemize}
+\item Una recta, $r:\, \begin{cases}\ A(x_0,y_0) \\ \ \vec v=(v_x,v_y) \end{cases} \ \to \ $
+
+\hspace{2cm} $\to \quad r:\ X(x,y)\in \mathbb R^2 \ / \ X=A+\lambda \vec v\, , \ \ \forall t\in \mathbb R$
+
+Si cambiamos la condición de igualdad por una desigualdad se obtiene un '`semiplano'.
+\item Segmento $AB$, $\ r:\, \begin{cases} \ A \\ \ B \to \ \vec v =\overrightarrow{AB}=B-A \end{cases} \ \to \ $
+ 
+\hspace{2cm} $\to \quad \overline{AB}:\ X\in \mathbb
+ R^2 \ / \ X=A+\lambda \overrightarrow{AB} \ \text{ con } \ \lambda \in [0,1]$
+ \end{itemize}
+
+\vspace{5mm}
+\begin{large}
+\textbf{Tipos de lugares geométricos}	
+\end{large}
+
+\subsection{Mediatriz}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+\begin{definition}[ Mediatriz]
+
+\emph{Mediatriz} de un segmento $AB$  es el lugar geométrico de los puntos del plano que equidistan de los puntos $A$ y $B$, extremos del segmento.	
+\end{definition}
+
+\vspace{5mm}
+
+\color{gris}
+\rule{250pt}{0.1pt}
+
+$A(x_0,y_0), \ B(x_1,y_1)\quad $ Sea $X(x,y)\in \mathbb R^2$ un punto cualquiera del plano.
+
+$X$ es un punto de la mediatriz de $AB \ \leftrightarrow \ d(X,A)=d(X.B) \quad \Rightarrow$
+
+$\Rightarrow \ \sqrt{(x-x_0)^2+(y-y_0)^2} =  \sqrt{(x-x_1)^2+(y-y_1)^2} \ \to \ 
+(x-x_0)^2+(y-y_0)^2=(x-x_1)^2+(y-y_1)^2 \ \to \
+\cancel{x^2}-2xx_0+x_0^2+\bcancel{y^2}-2yy_0+y_0^2=\cancel{x^2}-2xx_1+x_1^2+\bcancel{y^2}-2yy_1+y_1^2 \ \to \ x(-2x_0+2x_1)+y(-2y_0+2y_1)=x_1^2+y_1^2-x_0^2-y_0^2 \ \ \Rightarrow \ \ $
+
+\hspace{25mm}$\Rightarrow \quad  med:\  x(-2x_0+2x_1)+y(-2y_0+2y_1)-(x_1-x_0)(x_1+x_0)-(y_1-y_0)(y_1+y_0) $
+
+Por otro lado, $med:\, \begin{cases} \ M=\dfrac{A+B}{2}=\left( \dfrac{x_1+x_0}{2},  \dfrac{y_1+y_0}{2} \right) \\ \ \perp \overrightarrow{AB} \ \to \ \vec v_{med}=\big( -(y_1+y_0),x_1-x_0) \end{cases}  \to \  \dfrac{x- \dfrac{x_1+x_0}{2}}{-(y_1-y_0)}=\dfrac{y- \dfrac{y_1+y_0}{2}}{x_1-x_0} \ \to \ \dfrac{2x-(x_0+x_1)}{-\cancel{2}(y_1-y_0)}=\dfrac{2y-(y_0+y_1)}{\cancel{2}(x_1-x_0)} \ \ \Rightarrow  \ \ $
+
+\hspace{25mm} $\Rightarrow \quad  med:\  x(-2x_0+2x_1)+y(-2y_0+2y_1)-(x_1-x_0)(x_1+x_0)-(y_1-y_0)(y_1+y_0) $
+
+\vspace{-5mm}
+\begin{flushright} \rule{250pt}{0.1pt} \end{flushright}
+\color{black}
+
+\vspace{5mm}
+
+
+\begin{multicols}{2}
+Gráficamente, la mediatriz es una recta perpendicular a un segmento que lo divide en dos partes iguales.
+
+
+Como podemos observar en la imagen, $med_{\, AB}$ divide al segmento $AB$ en dos partes iguales. 
+
+     \begin{equation*} d(X,A)=d(X,B)\end{equation*} 
+     
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img-lg/lg01.png}
+\end{figure}
+\end{multicols}
+
+Para el cálculo de una mediatriz, encontrar $\ med_{\, AB}:\, \begin{cases} \ M_{\, AB} \\ \perp \overrightarrow{AB} \end{cases}$ será más rápido que aplicar la definición, $\ med_{AB} = \{ X\in \mathbb R^2 \ \big/ \ d(X.A)=d(X,B)  \}$
+ 
+\begin{miejemplo}
+	
+
+
+Encontrar la ecuación de la mediatriz del segmento con extremos en A(2 , 5) y B(4, -7).
+
+\vspace{5mm} Para encontrar la ecuación de la recta de la mediatriz, usaremos la definición, es decir sabemos que la recta debe satisfacer que
+$\quad d(A,X)=d(B,X) \quad \text{con } \ X(x,y) $
+     
+\vspace{2mm} Sustituyendo con los valores dados tenemos:$\quad \sqrt{(x-2)^2+(y-5)^2}=\sqrt{(x-4)^2+(y+7)^2}$
+     
+\vspace{2mm} Elevando al cuadrado en ambos lados de la ecuación y desarrollando los binomios tenemos: $\quad x^2-4x+4+y^2-10y+25=x^2-8x+16+y^2+14y+49$ 
+
+\vspace{2mm} Cancelando términos y simplificando la expresión se obtiene:
+$\quad \boldsymbol{med_{AB}:\  x-6y-9=0}$
+ 
+\vspace{2mm} Es decir, cualquier pareja  $X=(x,y)$ que satisfaga la ecuación anterior $(x-6y-9=0)$ hará que la longitud entre $d(A, X)$ y $d(B, X)$ sea la misma (equidistantes).
+
+\vspace{4mm}
+\begin{center}
+\rule{250pt}{0.1pt}
+
+Más rápido: $\quad med_{AB} \, : \begin{cases} \ M=(3,-1) \\ \ \vec 	v_{med}=(6,1) \end{cases} \to \ \dfrac{x-3}{6}=\dfrac{y+1}{1} \ \to \ \boldsymbol{med_{AB}:\  x-6y-9=0}$
+\end{center}
+
+\end{miejemplo}
+
+\vspace{5mm}
+
+\subsection{Bisectriz}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+\begin{definition}[ Bisectriz]
+
+La bisectriz de un ángulo es el lugar geométrico de los puntos del plano que equidistan de las rectas que forman el ángulo. 
+	
+\end{definition}
+
+\begin{multicols}{2}
+Gráficamente, una bisectriz divide un ángulo en dos partes iguales.  
+
+$$bis_{\, r,s}\ = \ \{ \, X\in \mathbb R^2 \ \big/ \ d(X.r)=d(X,s) \, \}$$
+
+Las bisectrices, rectas $b_1$ y $b_2$ forman con las rectas $r$ y $s$ la mitad del ángulo qye éstas forman.
+
+$r:\ Ax+By+C=0;\ \ s:\ A'x+B'+y+C'=0 \quad \Rightarrow $
+
+$\Rightarrow \ \  \dfrac{|A_1x+B_1y+C_1|}{\sqrt{A_1^2+B_1^2}}=\dfrac{|A_2x+B_2y+C_2|}{\sqrt{A_2^2+B_2^2}}$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img-lg/lg02.png}
+\end{figure}
+\end{multicols}
+
+
+\begin{miejemplo}
+
+Encontrar las ecuaciones de las bisectrices de los ángulos que determinan las rectas 
+
+\textbf{\textit{3x - 4y + 5 = 0}}  $\ $ y  $\ $  \textbf{\textit{6x + 8y + 1 = 0}}.
+
+\vspace{5mm}
+
+Retomamos la definición de bisectriz  sustituimos
+$\quad  \dfrac{|3x-4y+5|}{\sqrt{3^2+4^2}}=\dfrac{|6x+8y+1|}{\sqrt{6^2+8^2}}$
+     
+\vspace{2mm} Desarrollando tenemos:
+$ \quad \dfrac{|3x-4y+5|}{5}=\dfrac{|6x+8y+1|}{10}$
+
+\vspace{2mm} Es decir,
+$\quad 10|3x-4y+5|=5|6x+8y+1|$
+    
+\vspace{2mm} De donde, $\quad 10(3x-4y+5)= \pm \big[ 5(6x+8y+1) \big]$ 
+
+\vspace{2mm} Que conducen a las ecuaciones de los dos bisectrices,
+
+$$\boldsymbol{ b_1:\ 16y-9=0 \ \qquad \ b_2:\ 12x+11=0}$$
+\end{miejemplo}
+
+\begin{miejercicio}
+
+Calcula la ecuación de las bisectrices que forma la recta $r:\ 3x-4y+3=0$ con los ejes coordenados.
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm}$b_X:\ r \text{ con } OX \ \Rightarrow \ \dfrac{|3x-4y+3|}{\sqrt{3^2+(-4)^2}}=\dfrac{|y|}{\sqrt{0^2+1^2}} \ \to \ 3x-4y+3=\pm 5y \ \Rightarrow \ \begin{cases} \ b_{1X}:\ 3x-9y+3=0 \\ \ b_{2X}:\ 3x+y+3=0 \end{cases}$	
+
+\vspace{5mm}$b_Y:\ r \text{ con } OY \ \Rightarrow \ \dfrac{|3x-4y+3|}{\sqrt{3^2+(-4)^2}}=\dfrac{|x|}{\sqrt{1^2+0^2}} \ \to \ 3x-4y+3=\pm 5x \ \Rightarrow \ \begin{cases} \ b_{1Y}:\ 2x+4y+3=0 \\ \ b_{2Y}:\ 8x-4y+3=0 \end{cases}$
+\end{miejercicio}
+
+
+\vspace{5mm}
+\begin{cuadro-naranja}
+
+\textbf{Bisectrices de dos rectas a partir de sus vectores directores}: este modo de encontrar las bisectrices será de mayor utilidad que el anterior en caso de querer encontrar las \emph{bisectrices interiores de un triángulo}, cuya intersección determinará el \emph{incentro}.
+
+Usaremos \emph{vectores unitarios} $(\vec u_r,\ \ \vec u_s)$ para que el tamaño de los vectores directores $(\vec v_r,\ \ \vec v_s)$ no influya en la dirección de las bisectrices. (Bastaría con tomar vectores directores del mismo tamaño, por eso, la opción más sencilla es normalizarlos, hacerlos unitarios.
+
+\begin{miejemplo}
+
+Encuentra las bisectrices de las rectas $r:\, y=3x-2$ y $s:\, y=-2x+3$
+
+\vspace{5mm} Es fácil encontrar que $\ P=r\cap s\equiv(1,1)$
+
+\vspace{2mm} $\vec v_r=\ (m=3)\ =(1,3) \ \to \ \vec u_r=\dfrac{\vec v_r}{|\vec v_r|}=\dfrac {1}{\sqrt{10}} (1,3)$
+
+\vspace{2mm} $\vec v_s=\ (m=-2)\ =(1,-2) \ \to \ \vec u_s=\dfrac{\vec v_s}{|\vec v_s|}=\dfrac {1}{\sqrt{5}} (1,-2)$
+
+\vspace{2mm} Las direcciones de las bisectrices vendrán dadas por los vectores $\ \vec v_{b_1}=\vec u_r+\vec u_s \ \text{ y } \ \vec v_{b_2}=\vec u_r-\vec u_s\, . \ $ Así,
+
+\begin{multicols}{2}
+\vspace{2mm} $b_1:\ \begin{cases} \ P(1,1) \\ \ \vec v_{b_1}=\vec u_r+\vec u_s\approx (0.76,0.05) \end{cases}$
+
+\vspace{3mm}$ \Rightarrow \ b_1:\ \dfrac{x-1}{0.76}=\dfrac{y-1}{0.05}$
+
+\vspace{6mm} $b_2:\ \begin{cases} \ P(1,1) \\ \ \vec v_{b_2}=\vec u_r-\vec u_s\approx (-0.13,1.84) \end{cases} $
+
+\vspace{3mm}$ \Rightarrow \ b_2:\ \dfrac{x-1}{-0.13}=\dfrac{y-1}{1.84}$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img-lg/lg03.png}
+\end{figure}
+\end{multicols}	
+\end{miejemplo}
+\vspace{1mm}
+\end{cuadro-naranja}
+
+\vspace{5mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img-lg/lg04b.png}
+	\caption*{\textcolor{red}{\textbf{Bisectrices \emph{interiores} de un triángulo}}}
+\end{figure}
+
+
+\vspace{5mm}
+\begin{miejercicio}
+
+Encuentra las coordenadas del \emph{incentro} del triágulo de vértices $A(0,0),\ B(3,0) \text{ y } C(2,3)$
+
+\rule{250pt}{0.1pt}
+
+\vspace{6mm} $r_{AB}:\ y=0;\qquad r_{AC}:\ y=\dfrac 3 2 \, x;\qquad r_{BC}:\ y=-3x+9;\qquad \qquad A(0,0)$
+
+\vspace{4mm} $b_{A}:\ \begin{cases} \ \vec v_{AB}=(3,0) &\to \vec u_{AB}=(1,0) \\ \ \vec v_{AC}=(2,3) &\to \vec u_{AC}=\dfrac{(2,3)}{\sqrt{13}}\approx (0.55,0.83) \end{cases}  \quad \Rightarrow \ $
+
+\vspace{2mm} \hspace{3cm} $\Rightarrow \quad  \vec v_{b_A}=\vec u_{AB}+\vec u_{AC}=(1,0)+(0.55,0.83)=(1.55,0.83)$
+
+\vspace{2mm} $b_{B}:\ \begin{cases} \ \vec v_{BA}=(-3,0) &\to \vec u_{BA}=(-1,0) \\ \ \vec v_{BC}=(-1,3) &\to \vec u_{BC}=\dfrac{(-1,3)}{\sqrt{10}}\approx (-0.32,0.95) \end{cases}  \quad \Rightarrow \ $
+
+\vspace{2mm} \hspace{3cm} $\Rightarrow \quad  \vec v_{b_B}=\vec u_{BA}+\vec u_{BC}=(-1,0)+(-0.32,0.95)=(-1.32,0.95)$
+
+\vspace{2mm} 
+\begin{multicols}{2}
+\vspace{4mm} $\vec v_{b_A} \ \to \ m_{b_A}=\ 0.54 \quad \ \Rightarrow \quad b_A:\ y=\ 0.54x$
+
+\vspace{6mm} $\vec v_{b_B} \ \to \ m_{b_B}=-0.72 \quad \Rightarrow \quad b_B:\ y=-0.72x$
+
+\vspace{8mm} $I\equiv b_A \cap b_B \ \to \ \begin{cases} \ y=0.54 x\\ \ y=-0.72x \end{cases} \ \to \ $
+
+\vspace{4mm} $\to \ x=1.71;\ y=0.93 \ \Rightarrow \ \boldsymbol{I(1.71,0.93)}$
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img-lg/lg05.png}
+\end{figure}
+\end{multicols}
+	
+\end{miejercicio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+
+\section{Circunferencia}
+\vspace{-5mm}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.1);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.1);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+\begin{definition}[ Circunferencia]
+
+\begin{multicols}{2}
+$\quad$ 
+
+\textbf{\emph{Circunferencia}}: 
+
+\vspace{4mm}es el lugar geométrico de los puntos del plano $X(x,y)$ cuya distancia a un punto fijo llamado centro, $\mathcal O(a,b)$, es una cantidad fija llamada radio,  $\mathcal R$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.25\textwidth]{img-conicas/conicas20.png}
+	\end{figure}
+\end{multicols}
+\vspace{-10mm}
+$$\mathcal C \Big( \mathcal O(a,b)\, ,\  \mathcal R \Big)  \quad \equiv \quad \Big\{\,  X \in \mathbb R^2 \ \big/ \ d(X,\mathcal O)\ = \ \mathcal R \, \Big\}  \quad \leftrightarrow \quad \boldsymbol{ (x-a)^2 \ + \ (y-b)^2 \ = \ \mathcal R^2}$$
+	
+\end{definition}
+
+\underline{Observaciones}:
+
+Desarrollando: $\quad (x-a)^2+(y-b)^2=\mathcal R^2 \quad \longrightarrow \quad x^2+y^2-2ax-2by+a^2+b^2-\mathcal R^2=0$
+
+\begin{itemize}
+
+\item Se trata de un polinomio de segundo grado con dos variables, $x$ e $y$ y que no tiene término cruzado, en $x\cdot y$.
+\item Los coeficientes de $x^2$ e $y^2$ son ambos $1$, por lo que lo prodremos escribir como:
+
+$$ \boldsymbol{ x^2 \ + \ y^2\ + \ A\, x \ + \ B\, y \ + \ C \ = \ 0 }$$
+
+con $\qquad -2a=A \ \to \ a=-A/2;\qquad -2b=B \ \to \ b=-B/2; \qquad $
+
+$a^2+b^2-\mathcal R^2=C \ \Rightarrow \ \boldsymbol{ \mathcal R^2=\left( \dfrac A 2 \right)^2+\left( \dfrac B 2 \right)^2-C > 0 } \ (*)\ $ condición importante.
+
+\item En estas condiciones, este polinomio de segundo grado representará una circunferencia centrada en $\mathcal O \left( -\dfrac A 2 ,- \dfrac B 2 \right)$ y de radio $\mathcal R=\sqrt{\left( \dfrac A 2 \right)^2+\left( \dfrac B 2 \right)^2-C }$	
+\end{itemize}
+
+Si la circunferencia está centrada en el origen su ecuación es $\ x^2+y^2=\mathcal R^2\ $ 
+que se llama \emph{ecuación reducida de la circunferencia}.
+
+\vspace{5mm} \underline{Propiedades de la circunferencia:}
+\begin{itemize}
+\item Dados dos puntos de un circunferencia, $P, \, Q \in \mathcal C$, entonces, la mediatriz del segmento $PQ$ pasa por el centro $\mathcal O$ de la circunferencia.	
+\item Las tangentes en un punto a una circunferencia son perpendiculares al radio.
+\item Por tres puntos (no alineados) pasa una única circunferencia, la que quiete su centro en el circuncentro del triángulo formado por los tres puntos.
+\end{itemize}
+
+
+\vspace{5mm} \begin{miejemplo}
+ 
+Con los conocimientos adquiridos en temas anteriores, 	determina el lugar geométrico de los puntos del plano cuyas distancias a los puntos $A(0,0)$ y $B(6,3)$ están en razón de $2:1$. Interpreta el resultado obtenido.
+ 
+ \vspace{5mm}  $\dfrac{d(X,A)}{d(X,B)}=2 \ \to \ \dfrac{\sqrt{x^2+y^2}}{\sqrt{(x-6)^2+(y-3)^2}}=2 \ \to \ x^2+y^2=4\, [(x-6)^2+(y-3)^2] \ \to \ $
+ 
+\vspace{2mm} $\to \  x^2+y^2=2^2\, (x^2-12x+36 \, + \, y^2-6x+9) \ \to \ 3x^2+3y^2-48x-24y+180=0$
+ 
+\vspace{2mm}  Veamos si se trata de una circunferencia, dividamos todo el polinomio por $3$ para conseguir que los coeficientes en $x^2$ e $y^2$ sean $1$, ya que no hay términos en $x\,y$:
+ 
+\vspace{2mm}  $x^2+y^2-16x-8y+60=0\ $ 
+
+\vspace{2mm} Para que realmente sea una circunferencia falta calcular el radio (si ello es posible): 
+
+\vspace{2mm} $\quad \mathcal R=\sqrt{ \left(\dfrac{-16}{2} \right)^2+ \left(\dfrac{-8}{2} \right)^2 - 60} = \sqrt{64+16-60}=\sqrt{20}>0$, luego
+ 
+\vspace{2mm}  Se trata de una circunferencia centrada en $(8,4)$ de radio $\sqrt{20}\, \mathrm{u}$.
+ 
+ \end{miejemplo}
+
+\vspace{5mm}
+
+\begin{miejercicio}
+
+Determina cuales de las siguientes ecuaciones determina una circunferencia y, en caso afirmativo, encuentra su centro y su radio.
+
+\vspace{2mm} $a)\ \ x^2+y^2-4x+6=0;\qquad b)\ \ 3x^2+3y^2-12x+6y-12=0;\qquad c)\ \ x^2+y^2-4x-6y+13=0$
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $\triangleright \ \ a \quad $ Los términos en $x^2$ e $y^2$ son $1$ y no hay término cruzado $xy$. Calculemos el radio:
+
+\vspace{2mm} $\mathcal R=\sqrt{(-4/2)^2+(0/2)^2-6}=\sqrt{-2} \ \to \ \nexists r$. No se trata de una circunferencia.
+
+
+\vspace{4mm} $\triangleright \ \ b \quad $ Dividimos, primero, todo el polinomio por $3$:
+
+\vspace{2mm} $x^2+y^2-4x+2y-4=0$ Como los términos en $x^2$ e $y^2$ son $1$ y no hay término cruzado $xy$, calculamos el radio:
+
+\vspace{2mm} $\mathcal R=\sqrt{(-4/2)^2+(2/2)^2-(-4)}=\sqrt{9}=3$. Se trata de una circunferencia de centro $(-2,1)$ y radio $3$
+
+\vspace{4mm} $\triangleright \ \ c \quad $ Como los términos en $x^2$ e $y^2$ son $1$ y no hay término cruzado $xy$, calculamos el radio:
+
+\vspace{2mm} $\mathcal R=\sqrt{(-4/2)^2+(-6/2)^2-13}=0 \to \ \nexists r$, no se trata de una circunferencia.
+
+\color{gris}
+\vspace{4mm} Se podría resolver el problema completando cuadrados, para ello hay que fijarse en los términos en $x$ e $y$ que serán los dobles productos:	(Teorema 4.2, resolución de la ecuación de segundo grado) (ver al final del ejercicio)
+
+\color{gris}
+\vspace{2mm} $a)\quad (x-2)^2-4 \, + \, y^2 \, + 6 = 0 \ \to \ (x-2)^2+y^2=-2 <0\ \to \ $ No circunferencia
+
+
+
+\color{gris}
+\vspace{2mm} \textcolor{gris}{$b) \quad (x-2)^2-4\, + \, (y+1)^2-1\, -4 =0 \ \to \ (x-2)^2+(y+1)^2=9=3^2>0 \ $ Se trata de una circunferencia de centro $(2,-1)$ y radio $3\, \mathrm{u}$.}
+
+\color{gris}
+\vspace{2mm} $c)\quad (x-2)^2-4\, + \, (y-3)^2-9 \, + 13 = 0 \ \to \ (x-2)^2+(y-3)^2 \not > 0 \ $ No es una circunferencia. 
+
+\color{gris}
+\vspace{2mm} En este último caso, la suma de dos cantidades positivas (elevadas al cuadrado) es cero si y solamente si ambas son cero $\ \to \ (x-2)=0 \ \to \ x= 2 \ \ \wedge \ \ (y-3)=0 \ \to \ y=3 \quad \Rightarrow \quad P(2,3)\ $ La solución solo es un punto del plano.
+
+\color{NavyBlue}
+\begin{adjustwidth}{20pt}{20pt}
+\vspace{6mm}\underline{Completar cuadrados}:
+
+\vspace{2mm} $x^2+y^2-4x+5y+6=0 \ \to \ x^2-4x\ +y^2+5y \ +6=0 \ \to \ $
+
+$\to \ x^2-2\cdot 2x + \textcolor{red}{ 2^2 - 2^2 }\ +y^2+2\cdot \frac 52 y + \textcolor{red}{(5/2)^2-(5/2)^2}\ +6=0  \ \to \ $
+
+$\to \ (x-2)^2 \ -4 \ + \ (y+ 5/2)^2 \ - \ (5/2)^2\ + 6 = 0 \ \to \ $
+
+$(x-2)^2+(y+5/2)^2\ -4+25/4+6 =0 \ \to \ (x-2)^2+(y+5/2)^2+33/4 = 0 \ \to $
+
+$\to (x-2)^2+(y+5/2)^2=-33/4 < 0 \quad $, en este caso, no es una circunferencia.
+\end{adjustwidth}
+\color{black}
+\end{miejercicio}
+
+\vspace{0.5cm}
+
+\subsection{Posiciones relativas de una recta $\boldsymbol r$ y una circunferencia $\boldsymbol{\mathcal C(\mathcal O,r)}$}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img-conicas/conicas21.png}
+	\end{figure}
+
+
+$\checkmark \quad$ \underline{Algebráicamente}:
+
+Resolver el sistema de ecuaciones formado por la recta y por la circunferencia,
+
+\hspace{2cm} --- Si no hay solución $\quad \Rightarrow \quad r \text{ externa a } \ \mathcal C$ 
+
+\hspace{2cm} --- Si la solución es única $\quad \Rightarrow \quad r \text{ tangente a } \ \mathcal C$
+
+\hspace{2cm} --- Si hay dos soluciones $\quad \Rightarrow \quad r \text{ secante a } \ \mathcal C$
+
+\vspace{4mm} $\checkmark \quad$ \underline{Geométricamente}:
+
+Calculamos $d=d(\mathcal O, r)$, siendo $\mathcal O$ el centro de la circunferencia $\mathcal C$
+
+\hspace{1cm}--- Si $\ d>\mathcal R \ \to \ r \text{ externa a } \ \mathcal C\, ; \ $ 
+
+\hspace{1cm}--- Si $\ d=\mathcal R \ \to \ r \text{ tangente a } \ \mathcal C\, ; \ $ 
+
+\hspace{1cm}--- Si $\ d<\mathcal R \ \to \ r \text{ secante a } \ \mathcal C\, ; \ $ 
+$\quad$  Si $\ d=0 \ \to \ r \text{ secante a } \ \mathcal C\, ; \ $  en un diámetro.
+
+\vspace{5mm}
+
+\begin{miejemplo}
+
+Determina la posición relativa de la circunferencia $\mathcal C:\, x^2+y^2-6x-4y-12=0$	 respecto de las rectas:
+
+\vspace{2mm}$a)\ \ r_1:\, 3x-4y-26=0;\qquad b)\ \ r_2:\, 3x-4y-1=0;\qquad c)\ \ r_3:\, 3x-4y+49=0;$
+
+\vspace{2mm}$d)\ \ r_4:\, x+2=0;\qquad \qquad \ \ \ e)\ \ r_5:\, y=4$
+
+\vspace{6mm} $x^2+y^2-6x-4y-12=0 \quad \to \quad (x-3)^2-9+(y-2)^2-4-12=0 \ $
+
+\vspace{2mm} \hspace{3cm} $\Rightarrow \quad (x-3)^2+(y-2)^2=5^2 \quad \Rightarrow \quad \mathcal C\, \Big( \, \mathcal O(3,2)\, ; \ \mathcal R=5\, \Big)$
+
+\vspace{6mm} $\triangleright \ \ a)\quad d(\mathcal O,r_1)=\dfrac{|3\cdot 3-4\cdot 2-26|}{\sqrt{3^2+(-4)^2}}=\dfrac{25}{5}=5=\mathcal R \ \to \ $ tangentes.
+ 
+\vspace{4mm} $\triangleright \ \ b)\quad d(\mathcal O,r_2)=\dfrac{|3\cdot 3-4\cdot 2-1|}{\sqrt{3^2+(-4)^2}}=0<\mathcal R \ \to \ $ secantes (diámetro).
+
+\vspace{4mm} $\triangleright \ \ c)\quad d(\mathcal O,r_1)=\dfrac{|3\cdot 3-4\cdot 2+49|}{\sqrt{3^2+(-4)^2}}=\dfrac{50}{5}=10>\mathcal R \ \to \ $ externas.
+
+\vspace{4mm} $\triangleright \ \ d)\quad d(\mathcal O,r_4)=\dfrac{|3+2|}{\sqrt{1^2+0^2}}=5=\mathcal R \ \to \ $ tangentes.
+
+\vspace{4mm} $\triangleright \ \ f)\quad d(\mathcal O,r_r)=\dfrac{|2-4|}{\sqrt{0^2+1^2}}=2<\mathcal R \ \to \ $ secantes.
+
+\vspace{6mm} Sería conveniente resolver el ejercicio algebraicamente.
+\end{miejemplo}
+
+\begin{miejercicio}
+
+?`Para que valor de $k$, la recta $y=x+k$ es tangente a la crcinferencia $x*2+y^2=4$?	
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $r:\, x-y+k=0;\qquad x^2+y^2=2^2 \ \equiv \ \mathcal C \, \Big(\, \mathcal O(0,0)\, , \, \mathcal R=2\, \Big)$
+
+\vspace{3mm} $d(\mathcal O,r)=\dfrac {|0-0+k|}{\sqrt{1^2+(-1)^2}}=\dfrac{|k|}{2} \ = \ \mathcal R=2 \quad \Rightarrow \quad k=\pm 2\sqrt{2}$
+\end{miejercicio}
+
+
+%\vspace{0.5cm}
+
+\subsection{Potencia de una circunferencia}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+
+\begin{definition}[ Potencia]
+
+Sea $P(x_0,y_0)$ un punto del plano y $\mathcal C \, \Big( \, \mathcal O(a,b)\, , \, \mathcal R \, \Big)$ una circunferencia.	 Calculamos la distancia entre $P$ y el centro $\mathcal O$ de la circunferencia y le llamamos $d=d(\mathcal O, P)$
+
+\vspace{4mm} Se llama \emph{\textbf{potencia}}, $\boldsymbol{\mathcal P}$, de $P$ respecto de $\mathcal C$ a la cantidad $\boldsymbol{d^2-r^2}$
+
+$$\boldsymbol{ \mathcal P \ =} \ d^2-r^2 \ \boldsymbol{ = \ (x_0-a)^2+(y_0-b)^2-r^2}$$
+
+\vspace{4mm} Consiste en sustituir las coordenadas de $P$ en la ecuación (todo a la izquierda) de $\mathcal C$
+
+\vspace{2mm} \textcolor{gris}{Evidentemente, }
+
+\textcolor{gris}{$\ d=d(\mathcal O,P)= |\overrightarrow{OP} |=\sqrt{(x_0-a)^2+(y_0-b)^2} \ \to \ \mathcal P= d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2$}
+\end{definition}
+\underline{Observaciones}:
+
+\begin{itemize}
+\item Si $P$ es exterior a $\mathcal C \ \to \ (d>r) \ \to \ \mathcal P>0$
+\item Si $P$ pertenece a $\ \mathcal C \ \to \ (d=r) \ \to \ \mathcal P=0$
+\item Si $P$ es interior a $\mathcal C \ \to \ (d<r) \ \to \ \mathcal P<0$
+\end{itemize}
+
+\vspace{5mm}
+
+\begin{definition}[ Eje radical]
+
+Se llama \textbf{\emph{eje radical}} de dos circunferencia al lugar geométrico de los puntos del plano que tienen la misma potencia respecto de las dos circunferencias. Es una recta perpendicular al segmento que une sus centros.	
+\end{definition}
+
+\color{gris}
+
+Por medio de la geometría analítica se puede demostrar que el eje radical es siempre una recta.
+
+Sean $(a_1,b_1)$ y $(a_2,b_2)$ los centros de las circunferencias $\mathcal C_1$ y $\mathcal C_2$, respectivamente, de centros $\mathcal R_1$ y $\mathcal R_2$. Por definición de eje radical, un punto $(x,y)\in \mathbb R^2$ será del eje radical si:
+
+$(x-a_1)^2+(y-b_1)^2-\mathcal R_1^2=(x-a_2)^2+(y-b_2)^2-\mathcal R_2^2 \ \to \ 
+2(a_2-a_1)\, x \, + \, 2(b_2-b_1)\, y \, + \, (\mathcal R_2^2-\mathcal R_1^2+a_1^2+b_1^2-a_2^2-b_2^2)\ = \ 0$
+
+Que es la ecuación de una recta $(Ax+By+C=0)$, pues no quedan términos de segundo grado $(x^2, \ y^2,\ x\cdot y)$.
+
+El demostrar que es perpendicular al vector $\overrightarrow{\mathcal O_1 \mathcal O_2}$ es sencillo y se deja como ejercicio.
+
+\color{black}
+
+\vspace{5mm}
+
+\begin{miejemplo}
+
+Calcula la potencia del punto $P(-3,8)$ respecto de	las circunferencias:
+
+\vspace{2mm} $\mathcal C_1:\ x^2+y^2-14x+13=0;\quad \mathcal C_2:\, \Big( \, \mathcal O(0,6)\, , \, \mathcal R=\sqrt{13} \, \Big); \quad \mathcal C_3:\  x^2+(y-6)^2=16$
+
+E in I
+
+\vspace{6mm} $\mathcal C_1:\ (x-7)^2-49+y^2+13=0 \ \to \ (x-7)^2+y^2=6^2$
+
+\vspace{2mm} $\mathcal P_1= ((-3)-7)^2+8^2-6^2 = 100+64-36=128>0 \ \to \ P \ \text{ exterior a } \ \mathcal C_1$
+
+\vspace{4mm} $\mathcal C_2:\ x^2+(y-6)^2-(\sqrt{13})^2=0 $
+
+\vspace{2mm} $\mathcal P_2= (-3)^2+(8-6)^2-13 = 9+4-13=0 \ \to \ P \ \text{ pertenece a  } \ \mathcal C_1$
+
+\vspace{4mm} $\mathcal C_3:\ x^2+(y-6)^2-4^2=0 $
+
+\vspace{2mm} $\mathcal P_2= (-3)^2+(8-6)^2-16 =9+4-16=-3<0 \ \to \ P \ \text{ interior a } \ \mathcal C_1$
+\end{miejemplo}
+
+\begin{miejercicio}
+
+Encuentra el eje radical de las circunferencias $\ \mathcal C_1:\ x*2+y^2-6x+4y-11=0\ $ y $\ \mathcal C_2:\ x^2+y^2+8x-2y-11=0\ $ y comprueba que se trata de una recta perpendicular al segmento que une sus centros.
+
+\vspace{6mm} $P(x,y)\in \mathbb R^2 \ \to \ \begin{cases} \ \mathcal P_1(P,\mathcal C_1)=x^2+y^2-6x+4y-11 \\ \ \mathcal P_2(P,\mathcal C_2)=x^2+y^2+8x-2y-11 \end{cases} \quad \to \quad  \mathcal P_1=\mathcal P_2 \quad \Rightarrow$
+
+\vspace{3mm}$\Rightarrow \quad 7x-3y+5=0 \ $ es una recta de vector director $\ \vec v=(3,7)$ \QED
+
+\vspace{2mm} $\mathcal C_1:\ x^2+y^2-6x+4y-11=0 \ \to \ (x-3)^2-9+(y+2)^2-4-11=0 \ \to \ (x-3)^2+(y+2)^2=(\sqrt{24})^2 \ \Rightarrow \ \mathcal C_2 \, \Big( \, \mathcal O_1(3,-2)\, , \, \mathcal R_1=\sqrt{24}\, \Big)$
+
+\vspace{2mm} $\mathcal C_2:\ x^2+y^2+8x-2y-11=0 \ \to \ (x+4)^2-16+(y-1)^2-1-11=0 \ \to \ (x+4)^2+(y-1)^2=(\sqrt{28})^2 \ \Rightarrow \ \mathcal C_2 \, \Big( \, \mathcal O_1(-4,1)\, , \, \mathcal R_1=\sqrt{28}\, \Big)$
+
+\vspace{2mm} $\overrightarrow {\mathcal O_1 \mathcal O_2}=\mathcal O_2-\mathcal O_1=(-4,1)-(3,-2)=(-7,3)$
+
+\vspace{2mm} $\vec v \cdot \overrightarrow {\mathcal O_1 \mathcal O_2} = (3,7)\cdot (-7,3)=3(7)+7(3)=-21+21=0 \ \Rightarrow \ \vec v \, \perp \,  \overrightarrow {\mathcal O_1 \mathcal O_2} \ \ $ Luego el eje radical es perpendicular al segmento que une los centros de las circunferencias que lo definen. \QED
+	
+\end{miejercicio}
+
+\vspace{5mm}
+
+\begin{myalertblock}{Circunferencia que pasa por tres puntos}
+
+\vspace{1mm} Si $P,\, Q,\ \text{ y } \, R	\ $ son tres puntos no alineados, formarán un triángulo. Si encontramos su \emph{circuncentro} podremos trazar la circunferencia que pasa por los tres vértices del triángulo.
+
+\vspace{4mm} $\checkmark \ \ $ \underline{Geométricamente}:
+
+\vspace{2mm} $\qquad \qquad mtz_{\, PQ} \, \cap \, mtz_{\, PR} \ = \ \mathcal O\, ; \quad d(P,\mathcal O) \ = \ \mathcal R \quad \Rightarrow \quad \mathcal C \, \Big(\, \mathcal O \, , \,  \mathcal R\, \Big)$
+
+\vspace{2mm} El centro lo encontraremos como la intersección de dos cualesquiera de las mediatrices del triángulo $PQR$. El radio no es más que la distancia del centro a cualquiera de los vértices.
+
+\vspace{4mm} $\checkmark \ \ $ \underline{Algebraicamente}:
+
+\vspace{2mm} $\qquad \qquad \mathcal C:\ x^2+y^2+Bx+Cy+D=0\ $ Imponiendo que $\ P,Q,R\, \in \ \mathcal C\, ,  $ tendremos un sistema de tres ecuaciones con tres incógnitas $A,B,C$ que determinarán $\mathcal C$
+
+\vspace{1mm}
+
+\end{myalertblock}
+
+\vspace{5mm}
+
+\begin{miejercicio}
+
+Determina la ecuación de la circunferencia que pasa por los puntos $P(0,0),\ Q(10,0),\ R(18,12)$
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $\triangleright \ \ $ \underline{Geométricamente}:
+
+\begin{small}
+\vspace{2mm} $med_{\, PQ}=\begin{cases} \ M_{PQ}=\dfrac{P+Q}{2}=(5,0) \\ \perp \overrightarrow{PQ}=Q-P=(10,0)\ \to \ perp (1,0) \equiv (0,1) \end{cases} \to \ \dfrac{x-5}{0}=\dfrac{y}{1} \ \Rightarrow \ x=5$
+
+\vspace{2mm} $med_{\, PR}=\begin{cases} \ M_{PR}=\dfrac{P+R}{2}=(9,6) \\ \perp \overrightarrow{PQ}=Q-P=(18,12)\ \to \ perp (3,2) \equiv (-2,3) \end{cases} \to \ \dfrac{x-9}{-2}=\dfrac{y-6}{3} \ \Rightarrow \ 3x+2y=39$
+\end{small}
+
+\vspace{2mm} $\ \mathcal O\,= \, mtz_{\, PQ} \, \cap \, mtz_{\, PR} \ = \begin{cases} \ x=5 \\ 3x+2y=39 \end{cases} \ \Rightarrow \ x=5,\ y=12 \ \Rightarrow \mathcal O(5,12)$
+
+\vspace{2mm} $\mathcal R \, = \, d(\mathcal O, P) \, = \sqrt{(5-0 )^2+(12-0)^2}=\sqrt{169}=16\, \mathrm{u}$
+
+\vspace{2mm} Finalmente, $\ \ \mathcal C:\ (x-5)^2+(y-12)^2=13^2$
+
+
+\vspace{5mm} $\triangleright \ \ $ \underline{Algebraicamente}: $\quad \mathcal C:\ x^2+y^2+Ax+By+C=0$
+
+\vspace{2mm} $P(0,0)\in \mathcal C \ \to \ 0^2+0^2+A\, 0+B\, 0+ C=0 \ \quad \ C=0$ 
+
+\vspace{2mm} $Q(10,0)\in \mathcal C \ \to \ 10^2+0^2+A\, 10+B\, 0 + C=0 \ \quad \ 10A+C+100=0$
+
+\vspace{2mm} $R(18,12)\in \mathcal C \ \to \ 18^2+12^2+A\, 18+B\, 12+ C=0 \ \quad \ 18A+12B+C+468=0$
+
+\vspace{2mm} $\begin{cases} \ C=0 \\ \ 10A+C=-100 \\ \ 18A+12B+C=-468 \end{cases} \ \to \ C=0 \ \wedge \ A=-10 \ \wedge \ B=-24$
+
+\vspace{2mm} Finalmente, $\quad \mathcal C:\ x^2+y^2-10x-24y=0 \ $
+\begin{footnotesize} \textcolor{gris}{Comprobar que se trata de la misma circunferencia}. \end{footnotesize}
+
+
+\end{miejercicio}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\textwidth]{img-conicas/conicas22.png}
+	\caption*{\footnotesize{Ejercicio 12.6}}
+	\end{figure}
+
+
+%%%%
+\begin{miejercicio}
+
+Ecuación de la circunferencia $\mathcal C$, de centro $\mathcal O(2,3)$, que sea tangente a la recta $r:\, 4x-3y+6=0$
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $\mathcal R=d(\mathcal O,r)=\dfrac{|4(2)-3(3)+6|}{\sqrt{4^2+(-3)^2}}=1\, \mathrm{u}.\quad $ Luego, $\quad \mathcal C\, : \ (x-2)^2+(y-3)^2=1^2$
+\end{miejercicio}
+
+
+%%%%
+\begin{miejercicio}
+
+Los extremos de un diámetro de una circunferencia son $A(2,1)$ y $B(4,-5)$, encuentra su ecuación.
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $\mathcal O=M_{AB}=\dfrac{A+B}{2}=(3, -2)\, . \ \ $ Por otra parte, el diámetro $\phi=|\overrightarrow{AB}|=|B-A|=|(2,-6,)|=\sqrt{2^2+(-6)^2}=\sqrt{40}\, \mathrm{u} \ \to \ \mathcal R=\phi/2	=\sqrt{40}/2=\sqrt{10}\, \mathrm{u}\, , \ $ por lo que la circunferencia buscada tendrá por ecuación: $\ (x-3)^2+(y+2)^2=10$
+\end{miejercicio}
+
+
+%%%%
+\begin{miejercicio}
+
+Dada $\ \mathcal C:\ x^2+y^2-4x+10y+25=0$ determina la ecuación de una
+
+\begin{enumerate}[a) ]
+\item 	circunferencia concéntrica de radio $8$ u.
+\item   circunferencia concentrica que pase por $P(2,2)$
+\end{enumerate}
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm} $\mathcal C:\ x^2+y^2-4x+10y+25=0 \ \to \ (x-2)^2-4+(y+5)^2-25+25=0 \ \to \ $
+
+\vspace{2mm} $\to \ (x-2)^2+(y+5)^2=2^2 \ \Rightarrow \ \mathcal C:\ \Big( \mathcal O(2,-5), \mathcal R=2 \Big)$
+
+\vspace{4mm} $\triangleright \ \ a) \quad 	$ la circunferencia buscada tendrá centro en $(2,-5)$ y radio $8$ u, por lo que su ecuación será:
+$\quad (x-2)^2+(y+y)^2=64$
+
+\vspace{4mm} $\triangleright \ \ b) \quad 	$ la circunferencia buscada tendrá una ecuación de la forma:  $\ \ (x-2)^2+(y+5)^2=r^2\, , \  $ como queremos que pase por $P(2,2) \ \to \ \ (2-2)^2+(2+5)^2=r^2 \ \to \ 49=r^2 \ \Rightarrow \ r=7>0\, . \ $ La circunferencia buscada es: $\quad (x-2)^2+(y+5)^2=49$
+\end{miejercicio}
+
+
+%%%%
+\begin{miejercicio}
+
+Ecuación de la crcunferencia que pasa por el origen de coordenadas, tiene radio 4 u y su centro en la bisectriz del primer y tercer cuadrantes. \textcolor{gris}{$\ \ (y=x)$}
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm}	Si en centro de la circunferencia es $\mathcal O(a,b)$, al ser un punto de la bisectriz del primer y tercer cuadrantes, $y=x \ $ tendremos que $ \ a=b\, . \ $ Al tener radio $4$, su ecuación será: $\ \ (x-a)^2+(y-a)^2=16$
+
+\vspace{2mm} Si exigimos ahora que pase por el origen de coordenadas $(0,0)\, , \  $ al sustituir en la ecuación tendremos $ \ (0-a)^2+(0-a)^2=16 \ \to \ 2a^2=16 \ \to \  a^2=8 \ \to \ a=\pm 2\sqrt{2}$
+
+\vspace{2mm} Hay dos soluciones: $\ \ \mathcal C_1:\ (x-2\sqrt{2})^2+(y-2\sqrt{2})^2=16 \ \ \wedge \ \ \mathcal C_2:\ (x+2\sqrt{2})^2+(y+2\sqrt{2})^2=16 $
+\end{miejercicio}
+
+
+
+%%%%
+\begin{miejercicio}
+
+Ecuación de la recta tangente a $x^2+y^2=25$ que pasa por $A(0,6)$.
+
+\vspace{2mm} Repetir el ejercicio si ahora $A(3,4)$
+
+\rule{250pt}{0.1pt}
+
+
+\vspace{2mm} $r$ tangente a $\mathcal C$ si $d(r,\mathcal O)=\mathcal R$, nuestra circunferencia tiene centro en el origen $\mathcal O(0,0)$ y radio $\mathcal R=5\, \mathrm{u}$
+
+\vspace{2mm} En el primer caso $A\notin \mathcal C$, en el segundo $A\in \mathcal C$, pero procederemos del mismo modo en los dos casos.	
+
+\vspace{4mm} $\triangleright \ \ $ Si $\ A(0,6) \quad \to \quad y-6=mx \quad \to \quad r:\ mx-y+6=0 \ \Rightarrow \ d(\mathcal O,r)=\dfrac{|6|}{\sqrt{m^2+1}}=5=\mathcal R \quad \to \quad 6=5\sqrt{m^2+1} \ \to \ 36=25(m^2+1) \ \to m^2=11/25 \ \to \ m=\pm \dfrac{\sqrt{11}}{5}\, , \ $ hay dos soluciones.
+
+\vspace{4mm} $\triangleright \ \ $ Si $\ A(3,4) \quad \to \quad y-4=m(x-3) \quad \to \quad r:\ mx-y+3-4m=0 \quad \Rightarrow \quad $
+
+$\Rightarrow \quad  d(\mathcal O,r)=\dfrac{|3-4m|}{\sqrt{m^2+1}}=5 \quad \to \quad (3m-4)^2=5^2(m^2-1) \ \cdots \ \ \to m=\dfrac{-4(1\pm \sqrt{2})}{3}\, , \ $ también hay dos soluciones.
+
+\end{miejercicio}
+
+%%%%
+\begin{miejercicio}
+
+Circunferencia que pasa por $A(2,1)$ y $B(4,-3)$ y tiene su centro en la recta $r:\ x+y-5=0$
+
+\rule{250pt}{0.1pt}
+
+\begin{multicols}{2}
+El centro de la circunferencia lo encontraremos como intersección de la recta $r$ con la mediatriz del segmento $AB$. El radio no será más que la distancia del centro a uno cualquiera de los puntos $A$ y $B$ por donde pasa la circunferencia.
+
+\vspace{2mm} $mtz_{AB}:\ \begin{cases} \ M_{AB} \\ \ \perp \overrightarrow{AB} \end{cases} \ \cdots \cdots \to \ \ x-2y=5$
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.5\textwidth]{img-conicas/conicas23.png}
+	\end{figure}	
+\end{multicols}
+ $\mathcal O = r \cap mtz_{AB}=\begin{cases} \ x+y=5 \\ \ x-2y=5 \end{cases} \ \to \ \mathcal O(5,0)$
+
+\vspace{2mm} $\mathcal R=d(\mathcal O,A)=\cdots =	\sqrt{10} \quad \Rightarrow \quad \mathcal C:\ (x-5)^2+y^2=10$	
+\end{miejercicio}
+
+
+%%%%
+\begin{miejercicio}
+
+Recta tangente a la circunferencia $x^2+y^2=16$ que sea paralela a la recta $r:\ 2x-y+3=0$
+
+\rule{250pt}{0.1pt}
+
+\vspace{2mm}$\mathcal C \big( (0,0)\, ; \, 4\Big);\qquad r:\ y=2x+3 \ \to \ m_r=2$ La recta buscada, por ser paralela a $r$ tendrá por ecuación $s:\ y=2x+k$, en forma general, $2x-y+k=0$
+
+\vspace{2mm} $s$ tangente a $ \mathcal C \ \leftrightarrow \ d(\mathcal O, s)=\mathcal R \quad \to \quad \dfrac{ |2(0)-(0)+k| }{ \sqrt{ 2^2+(-1)^2 } }=4 \  \to \ \dfrac{|k|}{\sqrt{5}}=4 \ \Rightarrow \ k=\pm 4\sqrt{5}\ $ hay dos soluciones.	
+\end{miejercicio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+\subsection{Cónicas (en el próximo capítulo)}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+La importancia y la extensión de las cónicas es lo suficientemente importante para dedicarles el próximo capítulo completo.
+
+\vspace{1cm}
+
+
+
+\section{Ejercicios}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano que distan 2 unidades de la recta $r:\, y=1$.
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $X(x,y) \ \big/ \ d \big( \ X(x,y)\, , \, r:\, y-1=0 \ \big) \ = \ 2 \quad \Rightarrow \ \left| \dfrac{y-1}{2} \right| = 2  \quad \to \quad \begin{cases} \ y=\ 3 \\ \ y=-1 \end{cases}$
+
+\vspace{2mm} Se trata de dos rectas paralelas a $r$ a distancia de 2 unidades cada una de ellas.
+	
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano que distan del eje de abcisas el triple que del eje de ordenadas.
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} 
+\begin{multicols}{2}
+$d\,(X,\, eje\ X) \ =\ 3\ d\, (X,\, eje\ Y) \quad \to $
+
+\vspace{5mm} $\quad \left| \dfrac y 1 \right| \ = \ \left| \dfrac x 1 \right| \ \Rightarrow \ \begin{cases} \ y=\ 3x \\ \ y=-3x \end{cases} $
+
+\vspace{5mm} Son dos rectas que pasan por el origen y de pendientes $3$ y $-3$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.2\textwidth]{img-lg/lg06.png}
+\end{figure}
+\end{multicols}
+	
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano que equidistan de la bisectriz del primer y tercer cuadrantes (recta $y=x$) y del punto $A(2,0)$.
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $d\, (X.A) \ = \ d\, (X,r) \quad \to \quad \left| \dfrac{1\, x - 1\, y - 0}{\sqrt{1^2+(-1)^2}} \right|\ = \ \sqrt{(x-2)^2 +(y-0)^2}	\quad \to \quad $
+
+\vspace{2mm} $\to \quad x-y=\pm \sqrt{2}\, \sqrt{(x-2)^2 +(y-0)^2}  \quad \to \quad (x-y)*2 =\pm 2\, [\, (x-2)^2 +y^2 \,] \quad \Rightarrow $
+
+\vspace{2mm} $ \Rightarrow \quad x^2+y^2-2xy-8x+8=0 $
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano tales que las distancias a los puntos $A(-3,1)$ y $B(1,0)$ están en razón de $1:2$.
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $\dfrac{d(X,A)}{d(X,B)} \ = \ \dfrac 1 2 \quad \to \cdots \cdots \quad \to 3x^2+3y^2-26x-14y+30=0$
+	
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano que equidistan del puntos $A(-1,4)$ (radio) una cantidad $r=5\, \mathrm{u}$ (radio). (Circunferencia).
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $d(X,A)=5 \quad \to \quad \sqrt{(x+1)^2+(y-4)^2}=5 \quad \Rightarrow \quad (x+1)^2+(y-4)^2=25 \quad \Rightarrow $
+
+\vspace{2mm} $\Rightarrow  \quad \ x^2+y^2+2x-8y-8=0$
+	
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano cuya suma de distancias a dos puntos fijos $F(-2,0)$ y $F'(2,0)$ sea igual a $5\, \mathrm{u}$ (hipérbola).
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $\sqrt{(x+2)^2+y^2}+\sqrt{(x-2)^2+y^2}=5 \ \to \ 
+\sqrt{(x+2)^2+y^2}=5-\sqrt{(x-2)^2+y^2}\ $ elevando al cuadrado,
+
+\vspace{2mm} $(x+2)^2+y^2=25+(x-2)^2+y^2-10\, \sqrt{(x-2)^2+y^2}\ $ aislando la raiz y elevando al cuadrado
+
+\vspace{2mm} $(8x-25)^2=\big(-10\, \sqrt{(x-2)^2+y^2}\, \big)^2 \quad \to \quad
+ 36x^2+100y^2=225$
+ 
+ \vspace{2mm} Ecuación que arreglando un poco da $\ \dfrac{4}{25}	x^2 + \dfrac 4 9 y^2 = 1 \quad \Rightarrow \quad \dfrac{x^2}{(5/2)^2}+\dfrac{y^2}{(3/3)^2}=1$
+ 
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano cuya resta de distancias a dos puntos fijos $F(-2,0)$ y $F'(2,0)$ sea igual a $5\, \mathrm{u}$ (elipse).
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $\sqrt{(x+2)^2+y^2}-\sqrt{(x-2)^2+y^2}=5 \ \to \ 
+\sqrt{(x+2)^2+y^2}=5+\sqrt{(x-2)^2+y^2}\to  \  
+\cdots \cdots \ \to $
+
+\vspace{2mm} $\to \quad 44x^4-100y^2=275 \quad \Rightarrow \quad \dfrac{x^2}{(5/2)^2}-\dfrac{y^2}{(\sqrt{40/11})^2}=1$
+	
+\end{miejercicio}
+
+%%%
+\begin{miejercicio}
+
+Determina el lugar geométrico de los puntos del plano tal que la diferencia de los cuadrados de las distancias a los puntos $A(0,0)$ y $B(3,1)$ es de $7\, \mathrm{u}$.
+
+\rule{250pt}{0.5pt}
+
+\vspace{2mm} $\big(d(X,A)\big)^2-\big(d(X,B)\big)^2=7 \quad \to \quad x^2+y^2-[\, (x-3)^2+(y-1)^2\, ]=7 \quad \to \quad 6x-2y+17=0$
+	
+\end{miejercicio}
+
+\vspace{1cm}
+
+\begin{mipropuesto}
+
+Encuentra el incentro del triángulo de vértices $\ A(2,3),\ B(-1,2),\ C(3,0)$ y determina el radio de la circunferencia inscrita.	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $\textcolor{gris}{ r=d(I,r_{AB}) } \qquad \qquad I(\sqrt{2,2\sqrt{2}-1)};\quad r=\sqrt{10}-\sqrt{5}\, \mathrm{u}$ }}	\end{footnotesize}
+\end{flushright}
+
+\begin{mipropuesto}
+
+Dado el triángulo de vértices $\ A(2,1),\ B(1,-2),\ C(-1,3)$, 
+
+\begin{enumerate}[a) ]
+\item Calcula $P$, intersección de la bisectriz interior de vértice $C$ con el lado opuesto $AB$.
+\item Demuestra que $\ \dfrac{PA}{PB}=\dfrac{CA}{CB}$.	
+\end{enumerate}
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $P\left( \dfrac{45-\sqrt{377}}{16},\dfrac{55-3\sqrt{377}}{16} \right) \, ; \quad  \text{ sí se cumple, } \ \dfrac{PA}{PB}=\dfrac{CA}{CB}=\sqrt{ \dfrac{13}{29} }$ }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+Averigua cuáles de las siguientes expresiones corresponden a circunferencias y, en ellas, halla su centro y su radio:
+
+\hspace{1cm} \vspace{2mm} $a)\ \ m x^2 + y^2 - 8x + 2y + 10 = 0\ ; \qquad   \ b) \ \ x^2-y^2 + 2x + 3y -5 = 0$
+
+
+\hspace{1cm} \vspace{2mm} $c)\ \  x^2 + y^2 + xy -x + 4y - 8 = 0 \ ; \qquad d)\ \ 2x^2 + 2y^2 -16x + 24 = 0$
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $a)\ \ \mathcal C \Big( (4,-1);\sqrt{7}\Big);\quad b)\ $ No, coeftes. $x^2$ e $y^2$ distintos; $\quad c)\ $ No, hay tmno. en $xy$; $\quad d)\ \ \mathcal C \Big( (4,0);2 \Big)$ }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+Uno de los diámetros de una circunferencia tiene por extremos $A(3, -2)$ y $B(7, 0)$. Halla la ecuación de la circunferencia. 
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $(x-5)^2+(y+1)^2=5$ }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+Determina la ecuación de la circunferencia que pasa por $A(2, - 4),\  B(8, -10) \text{ y } C(4, -8)$ 
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $(x-9)^2+(y+3)^2=50$ }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+Estudia la posición relativa de la circunferencia de ecuación $x^2 + y^2 - 6x - 4y + 9 = 0$ respecto de cada una de las siguientes rectas: $\ r_1: \ x + y –-1 = 0 ;\quad r_2:\  3x - 4y + 9 = 0$
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ Exterior y tangente. }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+Halla el eje radical de los siguientes pares de circunferencias: 
+
+\vspace{2mm} \hspace{1cm} $a)\  \ x^2 + y2 = 4\ \ $ y $\ \ x^2 + ( y - 1)^2 = 9$
+
+\vspace{1mm} \hspace{1cm} $b)\  \ (x - 3)^2 + y^2 = 5 \ \ $  y $\ \ (x -7)^2 + y^2 = 9$
+
+\vspace{1mm} \hspace{1cm} $c)\ \ x^2 + ( y - 3)^2 = 2\ \ $ y $\ \ (x -5)^2 + y^2 = 1$ 
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $a)\ \ y=-2;\qquad b)\ \ x=9/2;\qquad c)\ \ 5x-3y-7=0$ }}	\end{footnotesize}
+\end{flushright}
+
+%%
+\begin{mipropuesto}
+
+De la circunferencia $\mathcal C$ se sabe que tiene su centro en la recta $r:\ x - 3y = 0$ y pasa por los puntos $A(1, 4)$ y $B(3, 6)$. Obtén la ecuación de $\mathcal C$.
+	
+\end{mipropuesto}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $\mathcal O(3t,t)\;\quad  t \ \big/  \ d(\mathcal O,A)=d(\mathcal O,B) \quad  \to \quad \mathcal C:\ (x-3)^2+(y-1)^2=25$ }}	\end{footnotesize}
+\end{flushright}
+
+
+
+
+
+
+
+
+
+\vspace{20mm}
+\begin{adjustwidth}{50pt}{250pt}
+\begin{cuadro-naranja}
+\textbf{\huge{Problemas $\boldsymbol{+}$}}\normalsize{$\, $}
+\end{cuadro-naranja}	
+\end{adjustwidth}
+
+\vspace{5mm}
+\begin{enumerate}[\textbf{P$\boldsymbol +$} 1. ]
+
+
+%%%%
+\item	Halla el lugar geométrico de los puntos del plano que equidistan de los siguientes pares de rectas:
+
+\vspace{3mm} $a)\ \ \begin{cases} \ r_1:\, 3x-4y-26&=0 \\ \ r_2:\, 12x+5y+1&=0 \end{cases} \qquad \qquad b)\ \ \begin{cases} \ s_1:\,  2x\ -7y\ -9&=0 \\ \ s_2:\, 4x-14y+11&=0 \end{cases}$
+
+
+\vspace{-4mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $b)\ \ 8x-28y-7=0\quad $ Como $s_1\parallel s_2 \to \ $ se obtiene una recta paralela a ambas que equidista de ellas. }}	\end{footnotesize}
+\end{flushright}
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $a)\ \ \begin{cases} \ 3x-11y+49&=0 \\ \ 11x-3y-37&=0 \end{cases} \quad $ Son las birectrices de $r_1$ y $r_2$. }}	\end{footnotesize}
+\end{flushright}
+
+%%%%
+\item	Dados los puntos $A(2,1)$ y $B(6,4)$, determina el lugar geométrico de los puntos $P$ del plano tales que la superficie del triángulo $ABP$ sea de 10 unidades de área.
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ La solución son dos rectas paralelas: $\quad 3x-4y-22=0;\qquad 3x-4y+18=0$ }}	\end{footnotesize}
+\end{flushright}
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $AB$ base del triángulo, de longitud 5, luego la altura, $d(P,r_{AB})=$ 4.}}	\end{footnotesize}
+\end{flushright}
+
+\item Estudia la posición relativa de la recta $y = x + k$ y la circunferencia $x^2 + y^2 = 1$ en función del parámetro $k$.
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{$k=\pm \sqrt{2} \ \to \ \text{ tangente}; \qquad k\in ]-\sqrt{2},\sqrt{2}[ \ \to \ \text{ secante}$; $\qquad$ otros casos: exterior.  }}	\end{footnotesize}
+\end{flushright}
+
+\item Considera las circunferencias $\ \mathcal C_1:\  (x - 1)^2 + ( y + 1)^2 = 2 \  \text{ y } \ \mathcal C_2:\  (x - 3)^2 + ( y + 3)^2 = 10$.
+
+a) Comprueba que ambas circunferencias son secantes y calcula sus puntos de corte, $A$ y $B$. \textcolor{gris}{Resuelve el sistema formado por las dos ecuaciones de las circunferencias.}
+
+b) Halla las potencias de los puntos $A$ y $B$ a las circunferencias $\mathcal C_1$ y $\mathcal C_2$.
+
+c) A la vista del resultado obtenido en el apartado anterior, ?`qué podrías decir del eje radical de ambas circunferencias?
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{tiny} \textcolor{gris}{\rotatebox{180}{ $a)\ \ A(0,-2),\ B(2,0);\qquad b)\ \ \mathcal P(A,\mathcal C_1)=\mathcal P(A,\mathcal C_2)=0 \ \wedge \ \mathcal P(b,\mathcal C_1)=\mathcal P(B,\mathcal C_2)= 0;\ \ \text{secantes};\qquad c)\ \ \text{ por ello, eje radical:} \ r_{AB}$ }}	\end{tiny}
+\end{flushright}
+
+\item  Halla la ecuación de la circunferencia inscrita en el cuadrado de vértices $A(-3, 3)$, $B(-1, 3)$, $C(-1, 1)$ y $D(-3, 1)$.
+
+\vspace{-6mm}
+\begin{flushright}
+\begin{footnotesize} \textcolor{gris}{\rotatebox{180}{ $\mathcal O=r_{AC}\cap r_{BD};\ \ \mathcal R=\frac 12 d(A,B)  \quad \to \quad \mathcal C:\ (x+2)^2+(y-2)^2=1$}}	\end{footnotesize}
+\end{flushright}
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img-lg/lg08.png}
+\end{figure}
+
+
+
+
+\newpage
+\vspace{1cm}
+\section{Resumen del tema}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.1);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.1);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+\begin{myblock}{Resumen ``lugares geométricos''}
+
+$$\text{Mediatriz segmento } \overline{AB} \quad \equiv \quad \{ \, X(x,y)\in \mathbb R^2\ \big/ \ d(X,A) \ = \ d(X,B) \, \}$$
+
+\vspace{5mm} $$\text{Med}_{AB} \quad \equiv \quad \begin{cases} \ M\ = \ \dfrac{A+B}{2} \\  \ \perp \ \overrightarrow{AB} \end{cases}$$ 
+
+\vspace{5mm}
+\begin{center} \rule{200pt}{0.1pt}  \end{center}
+
+
+\vspace{5mm}$$\text{Bisectriz}(r,s) \quad \equiv \quad  \{ \, X\in \mathbb R^2 \ \big/ \ d(X.r)=d(X,s) \, \}$$
+
+\vspace{5mm} $$A,\, B,\, C,\ \text{ triángulo } , \quad \text{Bisectriz interna } A \quad \equiv \quad \begin{cases} \ A \\ \ \vec v_a=\vec u_{AB}+\vec u_{AC} \end{cases} \quad $$
+
+$$\text{ con } \quad \vec u_{AB}=\dfrac{\overrightarrow{AB}}{|\overrightarrow{AB}|} \ \ \ \wedge \ \ \  \vec u_{AC}=\dfrac{\overrightarrow{AC}}{|\overrightarrow{AC}|} $$
+
+	
+\end{myblock}
+
+
+
+\begin{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%. SECCIONES
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{ruta/imagen.png}
+\end{figure}
+
+
+\chapter{texto}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (6.5,.2);
+	\fill [left color=teal!50, right color=blue!50] (6.5,0) rectangle (11.5,.2);
+	\end{tikzpicture}
+
+\vspace{1cm}
+\section{texto}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.1);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.1);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+\subsection{texto}
+\begin{tikzpicture}
+	\fill [left color=red!50, right color=teal!50] (0,0) rectangle (3.5,.01);
+	\fill [left color=teal!50, right color=blue!50] (3.5,0) rectangle (7.5,.01);
+	\end{tikzpicture}
+\vspace{0.5cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%. \begin{ ------>. 
+detsacado;  cuadro-naranja;  cuadro-gris;  miejercicio (solución extensa);  mipropuesto (solución corta y fuera del cuadro)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%. CURIOSIDAD
+\vspace{1cm}
+\color{ForestGreen!80}
+\rule{250pt}{0.2pt}
+Texto
+\vspace{-8mm}
+\begin{flushright}
+\rule{250pt}{0.2pt}		
+\end{flushright}	
+\color{black}
+\end{comment}
